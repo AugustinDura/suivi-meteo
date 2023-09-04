@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "suivi-meteo"
+version = "0.1.0"
+description = ""
+authors = ["Augustin Dura <augustindura@gmail.com>"]
+readme = "README.md"
+packages = [{include = "suivi_meteo"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.1.0"
+ipykernel = "^6.25.1"
+html5lib = "^1.1"
+
+
+[tool.poetry.group.scrap.dependencies]
+lxml = "^4.9.3"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
